@@ -1,12 +1,12 @@
-import { View, Text, TouchableOpacity, SafeAreaView, Image } from "react-native";
-import * as ImagePicker from "expo-image-picker";
-import { useState } from "react";
-import SectionHeader from "@/app/components/SectionHeader";
-import { icons } from "@/constants";
-import { StepTracker } from "@/app/components/StepIndicator";
-import { router } from "expo-router";
 import CustomButton from "@/app/components/CustomButton";
 import ImageUpload from "@/app/components/ImageUpload";
+import SectionHeader from "@/app/components/SectionHeader";
+import { StepTracker } from "@/app/components/StepIndicator";
+import { icons } from "@/constants";
+import * as ImagePicker from "expo-image-picker";
+import { router } from "expo-router";
+import { useState } from "react";
+import { Image, SafeAreaView, Text, TouchableOpacity, View } from "react-native";
 
 export default function SpaceVerification() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -86,7 +86,7 @@ export default function SpaceVerification() {
           className="bg-[#022C22] rounded-[14px]"
           textClassName="text-white text-[16px]"
           onPress={() =>
-            router.replace("/(auth)/HostspaceVerification/PayoutSetup")
+            router.push("/(auth)/HostspaceVerification/PayoutSetup")
           }
         />
       </View>

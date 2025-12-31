@@ -104,7 +104,7 @@ subtitleColor="#1C0067"
           className="bg-[#1C0067]  rounded-[14px]"
           textClassName="text-white text-[16px]"
            onPress={() =>
-              router.replace('/(auth)/BookSpaceVerification/BookerVerificationCompleted')
+              router.push('/(auth)/BookSpaceVerification/BookerVerificationCompleted')
             }
         />
       </View>

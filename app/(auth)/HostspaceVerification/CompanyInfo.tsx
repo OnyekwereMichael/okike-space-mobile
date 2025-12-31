@@ -1,15 +1,15 @@
+import CustomButton from "@/app/components/CustomButton";
+import ImageUpload from "@/app/components/ImageUpload";
+import InputField from "@/app/components/InputField";
+import SectionHeader from "@/app/components/SectionHeader";
+import SpaceCategoryDropdown from "@/app/components/SpaceCategoryDropDown";
+import { StepTracker } from "@/app/components/StepIndicator";
+import { router } from "expo-router";
 import {
-  View,
   SafeAreaView,
   ScrollView,
+  View,
 } from "react-native";
-import CustomButton from "@/app/components/CustomButton";
-import { StepTracker } from "@/app/components/StepIndicator";
-import InputField from "@/app/components/InputField";
-import SpaceCategoryDropdown from "@/app/components/SpaceCategoryDropDown";
-import ImageUpload from "@/app/components/ImageUpload";
-import { router } from "expo-router";
-import SectionHeader from "@/app/components/SectionHeader";
 
 export default function CompanyInfo() {
   return (
@@ -23,7 +23,6 @@ export default function CompanyInfo() {
         <SectionHeader
           title="Company Information"
           subtitle="We need to confirm it's really you."
-
         />
 
 
@@ -91,7 +90,7 @@ export default function CompanyInfo() {
           className="bg-[#022C22] rounded-[14px]"
           textClassName="text-white text-[16px]"
           onPress={() =>
-            router.replace('/(auth)/HostspaceVerification/IdentityCheck')
+            router.push('/(auth)/HostspaceVerification/IdentityCheck')
           }
         />
       </View>

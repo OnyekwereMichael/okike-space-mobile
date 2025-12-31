@@ -1,17 +1,18 @@
-import {
-    View,
-    Text,
-    SafeAreaView,
-    TouchableOpacity,
-    ScrollView,
-} from "react-native";
-import { Image } from "expo-image";
-import { Ionicons } from "@expo/vector-icons";
 import CustomButton from "@/app/components/CustomButton";
 import { icons, images } from "@/constants";
+import { Ionicons } from "@expo/vector-icons";
+import { Image } from "expo-image";
+import {
+    SafeAreaView,
+    ScrollView,
+    Text,
+    TouchableOpacity,
+    View,
+} from "react-native";
 
-import { router } from "expo-router";
 import { StepTracker } from "@/app/components/StepIndicator";
+import { router } from "expo-router";
+import SectionHeader from "@/app/components/SectionHeader";
 
 export default function BecomeVerifiedHost() {
     return (
@@ -21,18 +22,10 @@ export default function BecomeVerifiedHost() {
                 showsVerticalScrollIndicator={false}
                 contentContainerStyle={{ paddingBottom: 160 }}
             >
-                {/* Back */}
-                <TouchableOpacity className="mt-10 mb-14">
-                    <Image
-                        source={icons.arrowBack}
-                        style={{
-                            width: 30,
-                            height: 30,
-                            tintColor: "#000000",
-                        }}
-
-                    />
-                </TouchableOpacity>
+                 <SectionHeader
+          title=""
+          subtitle=""
+        />
 
 
                 <View className="items-center mb-5">
@@ -72,7 +65,7 @@ export default function BecomeVerifiedHost() {
                     className="bg-[#022C22] rounded-[14px] mt-6"
                     textClassName="text-white text-[16px]"
                     onPress={() =>
-                        router.replace('/(auth)/HostspaceVerification/CompanyInfo')
+                        router.push('/(auth)/HostspaceVerification/CompanyInfo')
                     }
                 />
             </View>

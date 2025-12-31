@@ -1,12 +1,11 @@
-import { View, Text, TouchableOpacity, SafeAreaView, Image } from "react-native";
-import { CameraView, useCameraPermissions } from "expo-camera";
-import { useState } from "react";
-import { Ionicons } from "@expo/vector-icons";
-import SectionHeader from "@/app/components/SectionHeader";
-import { icons, images } from "@/constants";
-import  { StepTracker } from "@/app/components/StepIndicator";
-import { router } from "expo-router";
 import CustomButton from "@/app/components/CustomButton";
+import SectionHeader from "@/app/components/SectionHeader";
+import { StepTracker } from "@/app/components/StepIndicator";
+import { icons } from "@/constants";
+import { CameraView, useCameraPermissions } from "expo-camera";
+import { router } from "expo-router";
+import { useState } from "react";
+import { Image, SafeAreaView, Text, TouchableOpacity, View } from "react-native";
 
 export default function IdentityCheck() {
   const [permission, requestPermission] = useCameraPermissions();
@@ -101,7 +100,7 @@ export default function IdentityCheck() {
           className="bg-[#022C22] rounded-[14px]"
           textClassName="text-white text-[16px]"
            onPress={() =>
-              router.replace('/(auth)/HostspaceVerification/SpaceVerification')
+              router.push('/(auth)/HostspaceVerification/SpaceVerification')
             }
         />
       </View>

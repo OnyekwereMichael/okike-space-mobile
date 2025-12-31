@@ -20,7 +20,7 @@ const SignUp = () => {
     <View className="flex-1 bg-[#043A2B]">
       {/* HEADER */}
       <View className="px-5 pt-6 pb-8">
-        <TouchableOpacity className="mb-12">
+        <TouchableOpacity className="mb-12" onPress={() => router.push('/Onboarding')}>
           <Image source={arrowBack} alt="Arrow Back" />
         </TouchableOpacity>
 
@@ -76,7 +76,9 @@ const SignUp = () => {
         <CustomButton
           title="Create Account"
           className="rounded-[12px] mt-4 text-[16px]"
-
+             onPress={() =>
+            router.push('/(auth)/chooseRole')
+          }
         />
 
         {/* LOGIN */}

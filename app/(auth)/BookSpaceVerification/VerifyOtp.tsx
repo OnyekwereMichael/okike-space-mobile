@@ -2,7 +2,7 @@ import CustomButton from "@/app/components/CustomButton";
 import SectionHeader from "@/app/components/SectionHeader";
 import { StepTracker } from "@/app/components/StepIndicator";
 import { router } from "expo-router";
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Alert, Text, TextInput, TouchableOpacity, View } from "react-native";
 
 export default function PhoneAuthScreen() {
@@ -83,7 +83,7 @@ export default function PhoneAuthScreen() {
           className="bg-[#1C0067] rounded-[14px]"
           textClassName="text-white text-[16px]"
           onPress={() =>
-            router.replace('/(auth)/BookSpaceVerification/PayoutSetupBooker')
+            router.push('/(auth)/BookSpaceVerification/PayoutSetupBooker')
           }
         />
         </View>

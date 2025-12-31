@@ -30,7 +30,7 @@ const validateEmail = (value: string) => {
     <View className="flex-1 bg-[#043A2B]">
       {/* HEADER */}
       <View className="px-5 pt-6 pb-8">
-        <TouchableOpacity className="mb-36">
+        <TouchableOpacity className="mb-36" onPress={() => router.push('/Signup')}>
           <Image source={arrowBack} alt="Arrow Back" />
         </TouchableOpacity>
 

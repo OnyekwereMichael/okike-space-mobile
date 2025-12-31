@@ -1,15 +1,13 @@
-import {
-  View,
-  SafeAreaView,
-  ScrollView,
-} from "react-native";
 import CustomButton from "@/app/components/CustomButton";
-import  { StepTracker } from "@/app/components/StepIndicator";
 import InputField from "@/app/components/InputField";
-import SpaceCategoryDropdown from "@/app/components/SpaceCategoryDropDown";
-import ImageUpload from "@/app/components/ImageUpload";
-import { router } from "expo-router";
 import SectionHeader from "@/app/components/SectionHeader";
+import { StepTracker } from "@/app/components/StepIndicator";
+import { router } from "expo-router";
+import {
+    SafeAreaView,
+    ScrollView,
+    View,
+} from "react-native";
 
 export default function PayoutSetup() {
   return (
@@ -104,7 +102,7 @@ export default function PayoutSetup() {
           className="bg-[#022C22] rounded-[14px]"
           textClassName="text-white text-[16px]"
            onPress={() =>
-              router.replace('/(auth)/HostspaceVerification/HostVerificationCompleted')
+              router.push('/(auth)/HostspaceVerification/HostVerificationCompleted')
             }
         />
       </View>
