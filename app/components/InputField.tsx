@@ -31,13 +31,13 @@ const InputField = ({
         <View className="my-2 w-full">
           <Text
             style={{ color: labelColor }} 
-          className={`text-[14px] font-Inter-Medium text-[#93869C] mb-2 ${labelStyle}`}>
+          className={`text-[14px] font-Poppins-Regular text-[#93869C] mb-2 ${labelStyle}`}>
             {label}
           </Text>
 
           <View className={`flex-row items-center bg-white border border-[#F0EEF1] rounded-[5px] ${containerStyle}`}>
             <TextInput
-              className={`p-4 h-[44px] text-[12px] flex-1 font-Inter-Medium placeholder:text-[#200A31]  ${inputStyle}`}
+              className={`p-4 h-[44px] text-[12px] flex-1 font-Poppins-Regular placeholder:text-[#200A31]  ${inputStyle}`}
               secureTextEntry={secureTextEntry}
               {...props}
             />

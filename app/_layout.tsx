@@ -10,10 +10,6 @@ import { ActivityIndicator, View } from "react-native";
 
 
 
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
-
 export default function RootLayout() {
      const [loaded] = useFonts({
       "ClashDisplay-Bold": require("../assets/fonts/ClashDisplay-Bold.otf"),
@@ -24,6 +20,7 @@ export default function RootLayout() {
       // inter 
       "Inter-Regular": require("../assets/fonts/Inter-Regular.otf"),
       "Inter-Medium": require("../assets/fonts/Inter-Medium.otf"), 
+      "Inter-SemiBold": require("../assets/fonts/Inter-Bold.otf"), 
 
       // poppins 
       "Poppins-Regular": require("../assets/fonts/Poppins-Regular.ttf"),
@@ -48,7 +45,11 @@ export default function RootLayout() {
   
   return (
     <SafeAreaView style={{ flex: 1 }}>
-     <StatusBar style="dark" />
+     <StatusBar
+  style="dark"
+  translucent
+  backgroundColor="transparent"
+/>
       <Stack>
         <Stack.Screen name="index" options={{ headerShown: false }} />
         <Stack.Screen name="(root)" options={{ headerShown: false }} />

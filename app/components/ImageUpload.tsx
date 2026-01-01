@@ -41,7 +41,7 @@ const ImageUpload = ({
   return (
     <View className="mb-6 mt-5">
       {label && (
-        <Text className="text-[#023327] text-[14px] font-Inter-Medium mb-3">
+        <Text className="text-[#023327] text-[14px] font-Poppins-Regular mb-3">
           {label}
         </Text>
       )}
@@ -61,7 +61,7 @@ const ImageUpload = ({
         ) : (
           <>
             <Ionicons name="share-outline" size={22} color="#6B8F86" />
-            <Text className="text-[#9CB7AF] text-[13px] mt-2">
+            <Text className="text-[#9CB7AF] font-Poppins-Regular text-[13px] mt-2">
               {placeholder}
             </Text>
           </>

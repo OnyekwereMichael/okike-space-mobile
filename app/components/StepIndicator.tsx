@@ -49,7 +49,7 @@ export const StepTracker = ({
   inactiveColor,
 }: StepTrackerProps) => {
   return (
-    <View className="mb-4">
+    <View className="mb-2">
       <Text
         className="text-center text-[16px] font-Clash-Semibold mb-3"
         style={{ color: textColor }}

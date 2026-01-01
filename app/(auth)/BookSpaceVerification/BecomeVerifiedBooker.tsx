@@ -62,7 +62,7 @@ export default function BecomeVerifiedBooker() {
 
                 <CustomButton
                     title="Start Verification"
-                    className="bg-[#1C0067] rounded-[14px] mt-6"
+                    className="bg-[#1C0067] rounded-[14px] mt-3"
                     textClassName="text-white text-[16px]"
                     onPress={() =>
                         router.push('/(auth)/BookSpaceVerification/VerifyPhoneNum')

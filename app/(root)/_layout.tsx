@@ -8,7 +8,7 @@ import { StatusBar } from "expo-status-bar";
 
 
 export const unstable_settings = {
-  anchor: '(tabs)',
+  anchor: 'index',
 };
 
 export default function RootLayout() {

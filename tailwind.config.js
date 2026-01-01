@@ -12,6 +12,7 @@ module.exports = {
         'Clash-Semibold': ['ClashDisplay-Semibold'],
         'Inter-Regular': ['Inter-Regular'],
         'Inter-Medium': ['Inter-Medium'],
+        'Inter-SemiBold': ['Inter-SemiBold'],
         'Poppins-Regular': ['Poppins-Medium']
       },
     },

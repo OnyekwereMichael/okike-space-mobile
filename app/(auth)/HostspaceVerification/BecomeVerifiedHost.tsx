@@ -55,14 +55,14 @@ export default function BecomeVerifiedHost() {
             </ScrollView>
 
             {/* 🔒 FIXED BOTTOM SECTION */}
-            <View className="px-5 pb-6 pt-4bg-white">
+            <View className="px-5 pb-6 pt-4 bg-white">
               
 
                 <StepTracker totalSteps={5} currentStep={1} />
 
                 <CustomButton
                     title="Start Verification"
-                    className="bg-[#022C22] rounded-[14px] mt-6"
+                    className="bg-[#022C22] rounded-[14px] mt-3"
                     textClassName="text-white text-[16px]"
                     onPress={() =>
                         router.push('/(auth)/HostspaceVerification/CompanyInfo')

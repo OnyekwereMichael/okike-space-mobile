@@ -1,0 +1,10 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "eas-update",
+			"type": "shell",
+			"command": "npx eas update --non-interactive"
+		}
+	]
+}

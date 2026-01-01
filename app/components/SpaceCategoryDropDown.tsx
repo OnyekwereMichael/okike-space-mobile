@@ -21,7 +21,7 @@ export default function SpaceCategoryDropdown() {
   return (
     <View className="w-full mt-3">
       {/* Label */}
-      <Text className="text-[14px] font-Inter-Medium text-[#023327] mb-3">
+      <Text className="text-[14px] font-Poppins-Regular text-[#023327] mb-3">
         Space Category
       </Text>
 
@@ -31,7 +31,7 @@ export default function SpaceCategoryDropdown() {
         activeOpacity={0.7}
         className="flex-row items-center justify-between bg-white border border-[#F0EEF1] rounded-[5px] px-4 h-[48px]"
       >
-        <Text className="text-[14px] text-[#023327]">
+        <Text className="text-[12px] text-[#023327] font-Poppins-Regular">
           {selected}
         </Text>
 
@@ -44,15 +44,15 @@ export default function SpaceCategoryDropdown() {
 
       {/* Dropdown list */}
       {isOpen && (
-        <View className="mt-2 bg-white border border-[#F0EEF1] rounded-[5px] overflow-hidden">
+        <View className="mt-2 bg-white border border-[#F0EEF1] rounded-[5px] overflow-hidden ">
           {options.map((item) => (
             <TouchableOpacity
               key={item}
               onPress={() => handleSelect(item)}
-              className="px-4 py-3 border-b border-[#F0EEF1]"
+              className="px-4 py-3 border-b border-[#F0EEF1] "
             >
               <Text
-                className={`text-[14px] ${
+                className={`text-[14px]  ${
                   selected === item
                     ? "text-[#023327] font-semibold"
                     : "text-[#6B8F86]"
